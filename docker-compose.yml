@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  search-filter-demo:
+    image: postgres
+    ports:
+      - 5438:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: audit-db
